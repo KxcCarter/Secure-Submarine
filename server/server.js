@@ -1,4 +1,4 @@
-
+require('dotenv').config();
 const express = require('express');
 
 const app = express();
@@ -10,7 +10,6 @@ const passport = require('./strategies/user.strategy');
 // Route includes
 const userRouter = require('./routes/user.router');
 const secretsRouter = require('./routes/secrets.router');
-
 
 // Body parser middleware
 app.use(bodyParser.json());
